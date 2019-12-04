@@ -1,0 +1,32 @@
+
+
+plugins {
+    // Apply the java-library plugin to add support for Java Library
+    id 'java-library'
+}
+
+repositories {
+    // Use jcenter for resolving dependencies.
+    // You can declare any Maven/Ivy/file repository here.
+    jcenter()
+}
+
+dependencies {
+// https://mvnrepository.com/artifact/commons-io/commons-io
+// https://mvnrepository.com/artifact/com.zaxxer/HikariCP
+compile group: 'com.zaxxer', name: 'HikariCP', version: '3.4.1'
+
+
+// https://mvnrepository.com/artifact/org.projectlombok/lombok
+compile group: 'org.projectlombok', name: 'lombok', version: '1.18.10'
+//compile files ("C:/Users/Abhishek Singh/OneDrive/Desktop/ojdbc14.jar")
+ compile files ("C://oraclexe//app//oracle//product//11.2.0//server//jdbc//lib//ojdbc6.jar")   
+    // https://mvnrepository.com/artifact/org.springframework/spring-context-support
+compile group: 'org.springframework', name: 'spring-context-support', version: '5.2.1.RELEASE'
+    // https://mvnrepository.com/artifact/org.hibernate/hibernate-core
+compile group: 'org.hibernate', name: 'hibernate-core', version: '5.1.0.Final'
+    // https://mvnrepository.com/artifact/org.springframework/spring-orm
+compile group: 'org.springframework', name: 'spring-orm', version: '5.1.11.RELEASE'
+
+    
+}
